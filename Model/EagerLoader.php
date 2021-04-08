@@ -143,7 +143,8 @@ class EagerLoader {
 			if ($external) {
 				$query = $this->addField($query, "$parentAlias.$parentKey");
 			} else {
-				$query = $this->buildJoinQuery($target, $query, 'LEFT', array("$parentAlias.$parentKey" => "$alias.$targetKey"), $options);
+				$joinType = $this->getJoinType($parent, $target, $type);
+				$query = $this->buildJoinQuery($target, $query, $joinType, array("$parentAlias.$parentKey" => "$alias.$targetKey"), $options);
 			}
 		}
 
@@ -151,6 +152,10 @@ class EagerLoader {
 		$query['contain'] = false;
 
 		return $query;
+	}
+
+	private function getJoinType(Model $parent, Model $child, $associationType){
+			return $parent->{$associationType}[$child->alias]['type'] ?? 'LEFT';
 	}
 
 /**
@@ -550,7 +555,7 @@ class EagerLoader {
 			'parentAlias', 'parentKey',
 			'targetKey', 'aliasPath', 'propertyPath',
 			'options', 'has', 'many', 'belong', 'external', 'finderQuery',
-			'habtm', 'habtmAlias', 'habtmParentKey', 'habtmTargetKey'
+			'habtm', 'habtmAlias', 'habtmParentKey', 'habtmTargetKey', 'type'
 		);
 
 		if ($this->isExternal($context, $meta)) {
