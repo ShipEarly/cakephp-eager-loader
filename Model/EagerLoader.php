@@ -109,7 +109,6 @@ class EagerLoader {
 		$value = $db->value($this->id);
 		$name = $db->name('EagerLoaderModel' . '__' . 'id');
 		$query['fields'][] = "($value) AS $name";
-		$query['callbacks'] = true;
 
 		return $query;
 	}
