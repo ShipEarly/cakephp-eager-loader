@@ -1,6 +1,6 @@
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.txt)
-[![Build Status](https://img.shields.io/travis/etubaro/cakephp-eager-loader/master.svg?style=flat-square)](https://travis-ci.org/etubaro/cakephp-eager-loader)
-[![Coverage Status](https://img.shields.io/coveralls/etubaro/cakephp-eager-loader.svg?style=flat-square)](https://coveralls.io/r/etubaro/cakephp-eager-loader?branch=master)
+[![Software License](https://img.shields.io/github/license/etubaro/cakephp-eager-loader?style=flat-square)](LICENSE.txt)
+[![Build Status](https://img.shields.io/travis/com/etubaro/cakephp-eager-loader?style=flat-square)](https://travis-ci.com/etubaro/cakephp-eager-loader)
+[![Coverage Status](https://img.shields.io/coveralls/github/etubaro/cakephp-eager-loader?style=flat-square)](https://coveralls.io/r/etubaro/cakephp-eager-loader?branch=master)
 [![Scrutinizer](https://scrutinizer-ci.com/g/etubaro/cakephp-eager-loader/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/etubaro/cakephp-eager-loader)
 
 # EagerLoader Plugin for CakePHP 2.x
