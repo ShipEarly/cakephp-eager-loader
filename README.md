@@ -1,7 +1,7 @@
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.txt)
-[![Build Status](https://img.shields.io/travis/chinpei215/cakephp-eager-loader/master.svg?style=flat-square)](https://travis-ci.org/chinpei215/cakephp-eager-loader)
-[![Coverage Status](https://img.shields.io/coveralls/chinpei215/cakephp-eager-loader.svg?style=flat-square)](https://coveralls.io/r/chinpei215/cakephp-eager-loader?branch=master)
-[![Scrutinizer](https://scrutinizer-ci.com/g/chinpei215/cakephp-eager-loader/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/chinpei215/cakephp-eager-loader)
+[![Build Status](https://img.shields.io/travis/etubaro/cakephp-eager-loader/master.svg?style=flat-square)](https://travis-ci.org/etubaro/cakephp-eager-loader)
+[![Coverage Status](https://img.shields.io/coveralls/etubaro/cakephp-eager-loader.svg?style=flat-square)](https://coveralls.io/r/etubaro/cakephp-eager-loader?branch=master)
+[![Scrutinizer](https://scrutinizer-ci.com/g/etubaro/cakephp-eager-loader/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/etubaro/cakephp-eager-loader)
 
 # EagerLoader Plugin for CakePHP 2.x
 
@@ -25,7 +25,7 @@ in the CakePHP documentation for general help.
   where your **composer.json** file is located:
 
 ```sh
-php composer.phar require chinpei215/cakephp-eager-loader
+php composer.phar require etubaro/cakephp-eager-loader
 ```
 
 * Load the plugin in your **app/Config/bootstrap.php** file:
