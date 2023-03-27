@@ -527,6 +527,10 @@ class EagerLoader {
 		$many = (stripos($type, 'many') !== false);
 		$belong = (stripos($type, 'belong') !== false);
 
+		$habtmAlias = null;
+		$habtm = null;
+		$habtmParentKey = null;
+		$habtmTargetKey = null;
 		if ($has && $belong) {
 			$parentKey = $parent->primaryKey;
 			$targetKey = $target->primaryKey;
@@ -542,10 +546,12 @@ class EagerLoader {
 			$targetKey = $target->primaryKey;
 		}
 
+		$external = false;
 		if (!empty($relation['external'])) {
 			$external = true;
 		}
 
+		$finderQuery = null;
 		if (!empty($relation['finderQuery'])) {
 			$finderQuery = $relation['finderQuery'];
 		}
